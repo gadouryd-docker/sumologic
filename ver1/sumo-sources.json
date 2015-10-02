@@ -8,7 +8,7 @@
       "protocol": "TCP",
       "encoding": "UTF-8",
       "forceTimeZone": false,
-      "category": "collector-container"
+      "category": "davids-container"
     },
     { 
       "sourceType": "Syslog",
@@ -17,24 +17,24 @@
       "protocol": "UDP",
       "encoding": "UTF-8",
       "forceTimeZone": false,
-      "category": "collector-container"
+      "category": "davids-container"
     }, 
- 	{ 
-                        "commands": ["/bin/bash"],
-                        "file": "/root/docker/Docker.bash",
-                        "workingDir": "/root/docker",
-                        "timeout": 180000,
-                        "script": "",
-                        "sourceType" : "Script",
-                        "name" : "DockerScriptSource",
-                        "description" : "Docker Script source",
-                    "cronExpression": "0 0/1 * 1/1 * ? *",      
-                        "category" : "docker",
-                        "timeZone": "UTC",
-                        "automaticDateParsing": true,
-                        "multilineProcessingEnabled": false,
-                        "useAutolineMatching": false,
-                        "forceTimeZone": false
-             }
-	]
+    { 
+      "commands": ["/bin/bash"],
+      "file": "/root/docker/Docker.bash",
+      "workingDir": "/root/docker",
+      "timeout": 180000,
+      "script": "",
+      "sourceType" : "Script",
+      "name" : "DockerScriptSource",
+      "description" : "Docker Script source",
+      "cronExpression": "0 0/1 * 1/1 * ? *",      
+      "category" : "docker",
+      "timeZone": "UTC",
+      "automaticDateParsing": true,
+      "multilineProcessingEnabled": false,
+      "useAutolineMatching": false,
+      "forceTimeZone": false
+     }
+  ]
 }
